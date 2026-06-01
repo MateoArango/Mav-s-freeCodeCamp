@@ -1,0 +1,61 @@
+#house {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  background-color: cadetblue;
+  border: 1px solid black;
+  top: 100px;
+}
+
+#roof, #chimney, #window-1, #window-2, #door {
+  position: absolute;
+}
+
+
+
+#roof {
+  top: -100px;
+  width: 500px;
+  height: 100px;
+  background-color: brown;
+  border: 1px solid black;
+
+  -webkit-clip-path: polygon(0 100%, 50% 0, 100% 100%);
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+#door {
+  bottom: 0;
+  left: 185px;
+  width: 120px;
+  height: 180px;
+  background-color: peru;
+  border: 1px solid black;
+}
+
+#window-1 {
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+#window-2 {
+  top: 50px;
+  left: 350px;
+  width: 100px;
+  height: 250px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+#chimney {
+  top: -100px;
+  right: 20px;
+  width: 50px;
+  height: 100px;
+  background-color: brown;
+  border: 1px solid black;
+}
