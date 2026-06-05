@@ -1,0 +1,34 @@
+.read {
+    background-image: linear-gradient(to right, #00c9ff, #92fe9d);
+}
+
+.to-read {
+    background-image: linear-gradient(to right, #ee6b70, #fad0c4);
+}
+
+.in-progress {
+    background-image: linear-gradient(to right, #00FF33, #FF2211);
+}
+
+span {
+    display: inline-block;
+}
+
+tr.to-read span[class="status"] {
+    border: 2px dotted #000000;
+    background-image: #ee6b70;
+}
+
+tr.read span[class="status"] {
+    border: 2px dotted #157cac;
+    background-image: #44c9ff;
+}
+
+tr.in-progress span[class="status"] {
+    border: 2px dotted #f80303;
+    background-image: #00FF33;
+}
+
+span[class='status'] span[class^='rate'] {
+ 
+}

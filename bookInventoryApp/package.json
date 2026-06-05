@@ -1,0 +1,13 @@
+{
+  "name": "book-inventory-app",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(@exodus|html-encoding-sniffer)/)"
+    ]
+  }
+}
