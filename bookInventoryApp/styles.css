@@ -1,13 +1,22 @@
+body {
+  font-family: "Google Sans Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 tr[class="read"] {
-  background-image: linear-gradient(to right, #00c9ff, #92fe9d);
+  background-image: linear-gradient(to right, #00c8ff3b, #92fe9d75);
 }
 
 tr[class="to-read"] {
-  background-image: linear-gradient(to right, #ee6b70, #fad0c4);
+  background-image: linear-gradient(to right, #ee6b6f7a, #fad0c45b);
 }
 
 tr[class="in-progress"] {
-  background-image: linear-gradient(to right, #00ff33, #ff2211);
+  background-image: linear-gradient(to right, #00ff3354, #ff211160);
 }
 
 span {
@@ -46,7 +55,7 @@ span[class^="rate"] > span {
 }
 
 span[class~="one"] > span:first-child {
-  background-image: linear-gradient(to right, #ff0000, #ff9900);
+  background-color: red;
 }
 
 span[class~="two"] > span:nth-child(-n+2) {
