@@ -1,53 +1,58 @@
 tr[class="read"] {
-    background-image: linear-gradient(to right, #00c9ff, #92fe9d);
+  background-image: linear-gradient(to right, #00c9ff, #92fe9d);
 }
 
 tr[class="to-read"] {
-    background-image: linear-gradient(to right, #ee6b70, #fad0c4);
+  background-image: linear-gradient(to right, #ee6b70, #fad0c4);
 }
 
 tr[class="in-progress"] {
-    background-image: linear-gradient(to right, #00FF33, #FF2211);
+  background-image: linear-gradient(to right, #00ff33, #ff2211);
 }
 
 span {
-    display: inline-block;
+  display: inline-block;
 }
 
 tr[class="to-read"] span[class="status"] {
-    border: 2px dotted #000000;
-    background-image: linear-gradient(to right, #ee6b70, #fad0c4);
+  border: #00c9ff 2px solid;
+  background-image: linear-gradient(to right, #00c9ff, #92fe9d);
 }
 
 tr[class="read"] span[class="status"] {
-    border: 2px dotted #157cac;
-    background-image: linear-gradient(to right, #44c9ff, #44c9ff);
+  border: #00c9ff 2px solid;
+  background-image: linear-gradient(to right, #00ff00, #d9ff00);
 }
 
 tr[class="in-progress"] span[class="status"] {
-    border: 2px dotted #f80303;
-    background-image: linear-gradient(to right, #00FF33, #FF2211);
+  border: #00c9ff 2px solid;
+  background-image: linear-gradient(to right, #00ff33, #ff2211);
 }
 
-span[class^='rate'] > span {
-  display: inline-block; /* Required to apply height/width */
-  border: 1px solid black;
+span[class="status"],
+span[class^="rate"] {
+  height: 40px;
+  width: 150px;
+  padding: 5px;
+}
+
+span[class^="rate"] > span {
+  border: 2px solid #333;
   border-radius: 50%;
-  margin: 2px;
+  margin: 0 5px;
   height: 20px;
   width: 20px;
-  background-color: lightgray;
+  background-color: #f0f0f0;
 }
 
-span[class*='one'] span:first-child {
-    background-image: linear-gradient(to right, red, yellow);
-}
-span[class*="two"] > span:nth-child(-n+2) {
-    background-image: linear-gradient(to right, blue, green);
+span[class~="one"] > span:first-child {
+  background-image: linear-gradient(to right, #ff0000, #ff9900);
 }
 
+span[class~="two"] > span:nth-child(-n+2) {
+  background-image: linear-gradient(to right, #11f06ec5, #09b61271);
+}
 
-
-span[class*='three'] > span {
-    background-image: linear-gradient(to right, gold, orange);
+span[class~="three"] > span {
+    background-image: linear-gradient(to right, #00ff00, #00bd29);
 }
