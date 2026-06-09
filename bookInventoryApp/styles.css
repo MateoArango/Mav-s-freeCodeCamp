@@ -29,6 +29,25 @@ tr.in-progress span[class="status"] {
     background-image: #00FF33;
 }
 
-span[class='status'] span[class^='rate'] {
- 
+span[class^='rate'] > span {
+  display: inline-block; /* Required to apply height/width */
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 2px;
+  height: 20px;
+  width: 20px;
+  background-color: lightgray;
+}
+
+span[class*='one'] span:first-child {
+    background-image: linear-gradient(to right, red, yellow);
+}
+span[class*="two"] > span:nth-child(-n+2) {
+    background-image: linear-gradient(to right, blue, green);
+}
+
+
+
+span[class*='three'] > span {
+    background-image: linear-gradient(to right, gold, orange);
 }
