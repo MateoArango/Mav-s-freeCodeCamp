@@ -51,6 +51,30 @@
     var(--color4) 67% 83%,
     var(--color5) 83% 100%
   );
-  width: 200px;
+  width: 250px;
   height: 20px;
+}
+
+#legend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;    /* Adds space between table and legend */
+  text-align: center; 
+}
+
+#legend > span {
+  margin-top: 5px;    /* Adds space between the gradient and the text */
+  font-size: 14px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This centers the table and legend */
+  width: fit-content;
+  margin: 0 auto;      /* Centers the container on the page */
 }
