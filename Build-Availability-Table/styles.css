@@ -7,6 +7,19 @@
   --color0: hsl(0, 0%, 100%);
   --solid-border: 2px solid rgb(0, 0, 0);
   --dashed-border: 2px dashed rgb(0, 0, 0);
+  font-family: "Google Sans", sans-serif;
+  --transition-animation: all 0.3s ease;
+}
+
+
+
+.google-sans-teo {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
 }
 
 .sharp td {
@@ -53,6 +66,8 @@
   );
   width: 250px;
   height: 20px;
+  border: var(--solid-border);
+
 }
 
 #legend {
@@ -64,11 +79,10 @@
   text-align: center; 
 }
 
-#legend > span {
-  margin-top: 5px;    /* Adds space between the gradient and the text */
-  font-size: 14px;
+.description {
+  font-size: 16px;
   font-weight: bold;
-  align-items: center;
+  margin-bottom: -35px; /* Adds space between description and gradient */
 }
 
 .container {
@@ -77,4 +91,26 @@
   align-items: center; /* This centers the table and legend */
   width: fit-content;
   margin: 0 auto;      /* Centers the container on the page */
+}
+
+.left {
+  position: relative;
+  right: 140px;
+  top: 35px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.right {
+  position: relative;
+  left: 140px;
+  top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+main:hover {
+  transition: var(--transition-animation);
+  transform: scale(1.05);
+  cursor: pointer;
 }
