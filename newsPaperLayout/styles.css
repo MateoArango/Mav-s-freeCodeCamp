@@ -8,6 +8,10 @@ img {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     grid-template-rows: auto 1fr 1fr 1fr;
+    grid-template-areas: "title title title"
+                         "feature-article feature-article cover-image"
+                         "secondary-article secondary-article cover-image"
+                         "small-article1 small-article2 small-article3";
 }
 
 .title {
